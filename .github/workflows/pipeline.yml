@@ -37,6 +37,8 @@ jobs:
   tag_release:
     needs: [simple_deployment_pipeline]
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
       
     steps:
       - name: Bump version and push tag
