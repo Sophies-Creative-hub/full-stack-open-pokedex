@@ -44,7 +44,7 @@ jobs:
         env: 
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # - name: Say hello
-      #   if: ${{ github.event_name == 'push' }}
-      #   run: | 
-      #     echo "Hello World!"
+      - name: Say hello
+        if: ${{ github.event_name == 'push' }}
+        run: | 
+          echo "Hello World!"
