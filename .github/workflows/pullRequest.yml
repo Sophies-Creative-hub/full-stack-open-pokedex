@@ -1,21 +1,21 @@
-name: Create Pull Request
+name: Automatischer PR-Ersteller
+
 on:
   push:
     branches:
-      - versioning
+      - IhrBranchName # Hier den Branch angeben, der überwacht werden soll
 
 jobs:
-  create_pull_request:
+  create_pr:
     runs-on: ubuntu-latest
+
     steps:
-    - name: Check Out Repository
+    - name: Checkout Repository
       uses: actions/checkout@v2
 
     - name: Create Pull Request
-      uses: peter-evans/create-pull-request@v3
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        branch: versioning
-        title: "Ihre PR-Überschrift"
-        body: "Ihre PR-Beschreibung"
-        base: "master" # Der Zweig, in den die Änderungen gemerged werden sollen
+      run: |
+        chmod +x create_pr.sh
+        ./create_pr.sh
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
