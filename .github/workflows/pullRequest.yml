@@ -18,4 +18,4 @@ jobs:
         branch: automate
         title: "Ihre PR-Überschrift"
         body: "Ihre PR-Beschreibung"
-        base: "master" # Der Zweig, in den die Änderungen gemerged werden sollen
+        base: "master" 
