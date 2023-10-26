@@ -13,3 +13,12 @@ Start by running `npm install` inside the project folder
 `npm run eslint` to run eslint
 `npm run build` to make a production build
 `npm run start-prod` to run your production build
+
+* * * * *
+- - - - -
+| | | | |
+| | | | +--- Wochentag (0 - 6) (Sonntag = 0)
+| | | +----- Monat (1 - 12)
+| | +------- Tag des Monats (1 - 31)
+| +--------- Stunde (0 - 23)
++----------- Minute (0 - 59)
