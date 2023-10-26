@@ -15,7 +15,7 @@ jobs:
       uses: peter-evans/create-pull-request@v3
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
-        branch: IhrBranchName
+        branch: versioning
         title: "Ihre PR-Überschrift"
         body: "Ihre PR-Beschreibung"
         base: "master" # Der Zweig, in den die Änderungen gemerged werden sollen
