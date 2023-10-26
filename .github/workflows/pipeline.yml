@@ -44,7 +44,7 @@ jobs:
         uses: actions/checkout@v2
       
       - name: Bump version and push tag
-        uses: anothrNick/github-tag-action@f7a8973e934fdd1f4fb3483d0a04d8c589df9d65
+        uses: anothrNick/github-tag-action@63f57a8f700e49fa524ebd3796b2a98aed155a82
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DEFAULT_BUMP: patch
