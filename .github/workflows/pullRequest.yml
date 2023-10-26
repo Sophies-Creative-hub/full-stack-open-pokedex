@@ -15,7 +15,6 @@ jobs:
 
     - name: Create Pull Request
       run: |
-        chmod +x create_pr.sh
-        ./create_pr.sh
+        hub pr create -b "master" -h "versioning" -m "PR Überschrift" -m "PR Beschreibung"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
