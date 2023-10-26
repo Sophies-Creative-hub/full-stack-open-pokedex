@@ -3,7 +3,7 @@ name: Automatischer PR-Ersteller
 on:
   push:
     branches:
-      - IhrBranchName # Hier den Branch angeben, der überwacht werden soll
+      - versioning # Hier den Branch angeben, der überwacht werden soll
 
 jobs:
   create_pr:
